@@ -1,0 +1,16 @@
+.container{
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.collapse ul li{
+    background-color: grey;
+}
+
+@media screen and (min-width: 992px){
+    .collapse ul li a{
+        display: none;
+        text-align: center;
+    }
+    
+}
