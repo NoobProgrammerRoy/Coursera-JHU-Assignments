@@ -1,0 +1,61 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    background-color: grey;
+    border: 2px solid black;
+    margin: 10px 10px;
+    position: relative;
+}
+
+section > h2{
+    position: absolute;
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+section > p{
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 992px){
+    section{
+        width: 30.5vw;
+        float: left;       
+    }
+}
+
+@media screen and (max-width: 991px){
+    section{
+        width: 45vw;
+        float : left;       
+    }
+
+    section:nth-child(4){
+        width: 93vw;
+    }
+    
+}
+
+@media screen and (max-width: 767px){
+    section{
+        float: none;
+        width: 90vw;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    section:nth-child(4){
+        width: 90vw;
+    }
+}
